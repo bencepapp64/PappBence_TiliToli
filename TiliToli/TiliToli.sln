@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiliToli", "TiliToli\TiliToli.csproj", "{F991D7E8-FFD2-40EC-A0C2-70F04EE4DBEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F991D7E8-FFD2-40EC-A0C2-70F04EE4DBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F991D7E8-FFD2-40EC-A0C2-70F04EE4DBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F991D7E8-FFD2-40EC-A0C2-70F04EE4DBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F991D7E8-FFD2-40EC-A0C2-70F04EE4DBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03F88757-7DFB-4CA7-A8F5-7E93353C5160}
+	EndGlobalSection
+EndGlobal
