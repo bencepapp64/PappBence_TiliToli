@@ -24,6 +24,14 @@ namespace TiliToli
         {
             InitializeComponent();
             Button0.Visibility = Visibility.Hidden;
+            Button1.IsEnabled = false;
+            Button2.IsEnabled = false;
+            Button3.IsEnabled = false;
+            Button4.IsEnabled = false;
+            Button5.IsEnabled = false;
+            Button6.IsEnabled = false;
+            Button7.IsEnabled = false;
+            Button8.IsEnabled = false;
         }
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
@@ -37,6 +45,11 @@ namespace TiliToli
                 egyikGomb.Margin = nullaGomb.Margin;
                 nullaGomb.Margin = seged;
             }
+        }
+        private void Shuffle_Click(object sender, RoutedEventArgs e)
+        {
+            Random r = new Random();
+
         }
     }
 }

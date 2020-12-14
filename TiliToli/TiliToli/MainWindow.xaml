@@ -16,6 +16,7 @@
         <Button Content="7" x:Name="Button7" HorizontalAlignment="Left" Margin="15,300,0,0" VerticalAlignment="Top" Width="100" Click="Button1_Click" Height="100"/>
         <Button Content="8" x:Name="Button8" HorizontalAlignment="Left" Margin="130,300,0,0" VerticalAlignment="Top" Width="100" Click="Button1_Click" Height="100"/>
         <Button Content="0" x:Name="Button0" HorizontalAlignment="Left" Margin="245,300,0,0" VerticalAlignment="Top" Width="100" Click="Button1_Click" Height="100"/>
+        <Button x:Name="Shuffle" Content="Keverés" HorizontalAlignment="Left" Margin="67,24,0,0" VerticalAlignment="Top" Width="223" Height="24" Click="Shuffle_Click"/>
 
     </Grid>
 </Window>
