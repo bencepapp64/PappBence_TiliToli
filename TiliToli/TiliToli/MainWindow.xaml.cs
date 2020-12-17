@@ -24,14 +24,14 @@ namespace TiliToli
         {
             InitializeComponent();
             Button0.Visibility = Visibility.Hidden;
-            /*Button1.IsEnabled = false;
+            Button1.IsEnabled = false;
             Button2.IsEnabled = false;
             Button3.IsEnabled = false;
             Button4.IsEnabled = false;
             Button5.IsEnabled = false;
             Button6.IsEnabled = false;
             Button7.IsEnabled = false;
-            Button8.IsEnabled = false;*/
+            Button8.IsEnabled = false;
         }
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
@@ -45,6 +45,27 @@ namespace TiliToli
                 egyikGomb.Margin = nullaGomb.Margin;
                 nullaGomb.Margin = seged;
             }
+            Win();
+        }
+        public void Win()
+        {
+            Button Button_zero = (Button)FindName("Button0");
+            Button Button_1 = (Button)FindName("Button1");
+            Button Button_2 = (Button)FindName("Button2");
+            Button Button_3 = (Button)FindName("Button3");
+            Button Button_4 = (Button)FindName("Button4");
+            Button Button_5 = (Button)FindName("Button5");
+            Button Button_6 = (Button)FindName("Button6");
+            Button Button_7 = (Button)FindName("Button7");
+            Button Button_8 = (Button)FindName("Button8");
+            Button Button_9 = (Button)FindName("Button9");
+
+            if (Button_1.Margin.Left == 15 && Button_1.Margin.Top == 70 && Button_2.Margin.Left == 130 && Button_2.Margin.Top == 70 && Button_3.Margin.Left == 245 && Button_3.Margin.Top == 70 && Button_4.Margin.Left == 15 && Button_4.Margin.Top == 185 && Button_5.Margin.Left == 130 && Button_5.Margin.Top == 185 && Button_6.Margin.Left == 245 && Button_6.Margin.Top == 185 && Button_7.Margin.Left == 15 && Button_7.Margin.Top == 300 && Button_8.Margin.Left == 130 && Button_8.Margin.Top == 300)
+            {
+                MessageBox.Show("!!!WIN!!!");
+
+            }
+
         }
         private void Shuffle_Click(object sender, RoutedEventArgs e)
         {
@@ -77,14 +98,14 @@ namespace TiliToli
                 }
 
             } while (k != diff);
-           /* Button1.IsEnabled = true;
+            Button1.IsEnabled = true;
             Button2.IsEnabled = true;
             Button3.IsEnabled = true;
             Button4.IsEnabled = true;
             Button5.IsEnabled = true;
             Button6.IsEnabled = true;
             Button7.IsEnabled = true;
-            Button8.IsEnabled = true;*/
+            Button8.IsEnabled = true;
         }
     }
 }
