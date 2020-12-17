@@ -20,6 +20,7 @@ namespace TiliToli
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int Counter = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -44,6 +45,7 @@ namespace TiliToli
                 var seged = egyikGomb.Margin;
                 egyikGomb.Margin = nullaGomb.Margin;
                 nullaGomb.Margin = seged;
+                Counter++;
             }
             Win();
         }
@@ -62,8 +64,27 @@ namespace TiliToli
 
             if (Button_1.Margin.Left == 15 && Button_1.Margin.Top == 70 && Button_2.Margin.Left == 130 && Button_2.Margin.Top == 70 && Button_3.Margin.Left == 245 && Button_3.Margin.Top == 70 && Button_4.Margin.Left == 15 && Button_4.Margin.Top == 185 && Button_5.Margin.Left == 130 && Button_5.Margin.Top == 185 && Button_6.Margin.Left == 245 && Button_6.Margin.Top == 185 && Button_7.Margin.Left == 15 && Button_7.Margin.Top == 300 && Button_8.Margin.Left == 130 && Button_8.Margin.Top == 300)
             {
-                MessageBox.Show("!!!WIN!!!");
-
+                
+                MessageBoxResult result = MessageBox.Show("Szeretnel ujat jatszani?", "!!Winner!!", MessageBoxButton.YesNo);
+                switch (result)
+                {
+                    case MessageBoxResult.Yes:
+                        MessageBox.Show($"{Counter} lepesbol raktad ki", "Uj jatek");
+                        break;
+                    case MessageBoxResult.No:
+                        MessageBox.Show($"Koszi a jatekot! {Counter} lepesbol raktad ki", "Viszlat!");
+                        Application.Current.Shutdown();
+                        break;
+                }
+                Button1.IsEnabled = false;
+                Button2.IsEnabled = false;
+                Button3.IsEnabled = false;
+                Button4.IsEnabled = false;
+                Button5.IsEnabled = false;
+                Button6.IsEnabled = false;
+                Button7.IsEnabled = false;
+                Button8.IsEnabled = false;
+                Counter = 0;
             }
 
         }
